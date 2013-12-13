@@ -43,7 +43,8 @@ $(function() {
 		
 		
 		// just for fun, lets rotate mr rabbit a little
-		bunny.rotation += 0.1;
+		bunny.rotation -= 0.1;
+		bunny.alpha = (bunny.alpha + 1 ) % 100;
 
 		// render the stage
 		renderer.render(stage);
